@@ -89,7 +89,7 @@ app.post('/api/duel', (req, res) => {
 
 app.get('/api/player', (req, res) => {
     try {
-        res.status(200).send(playersRecord)
+        res.status(200).send(playerRecord)
     } catch (error) {
         console.log('ERROR GETTING PLAYER STATS', error)
         rollbar.warning("Player stats not recording")
